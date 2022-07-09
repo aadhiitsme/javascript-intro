@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse</title>
+</head>
+<body>
+    <input type="text" id="a"><br>
+    <button onclick="rer()">REv</button>
+    <br>
+    <input type="text" id="b">
+
+</body>
+<script>
+    function rer()
+    {
+        var x,y,tem=0;
+        x=Number(document.getElementById('a').value);
+        while(x>0)
+        {
+        y=x%10;
+        x=parseInt( x/10);
+        tem=tem*10+y;
+        
+        
+        }
+        document.getElementById('b').value=tem;
+        alert(tem);
+    }
+</script>
+</html>

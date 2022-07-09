@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <p id="demo"></p>
+  
+    <button onclick="get()">GET</button>
+</body>
+<script>
+    function get()
+    {
+    var a,b;
+    switch(new Date().getDay())
+    {
+        case 0:
+            a="Sunday";
+            break;
+            case 1:
+                a="Monday";
+                break;
+                case 2:
+                    a="Thusday";
+                    break;
+                    case 3:
+                    a="Wednsday";
+                    break;
+                    case 4:
+                    a="Thursday";
+                    break;
+                    case 5:
+                    a="Friday";
+                    break;
+                    case 6:
+                    a="Saterday";
+                    break;
+                    default:
+                        alert('RRR');
+    }
+    document.getElementById("demo").innerHTML="today is"+a+Date();
+}
+</script>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caloo</title>
+</head>
+<body>
+  <input type="text" id="a">  
+  <input type="text" id="b">
+  <button onclick="sol()">Solve</button><br><br>
+  <input type="text" id="c"> 
+  <input type="text" id="d"><br><br>
+  <button onclick="sub()"><b>-</b></button> 
+  <input type="text" name="" id="e">
+
+  
+  
+  
+</body>
+<script>
+    function sol()
+    {
+        var l,m,n,o;
+        l=Number(document.getElementById('a').value);
+        m=Number(document.getElementById('b').value);
+      n=l+m;
+      o=l*m;
+      document.getElementById('c').value=n;
+      document.getElementById('d').value=o;
+
+    }
+    function sub()
+    {
+var x,y,z;
+x=document.getElementById('c').value;
+y=document.getElementById('d').value;
+z=x-y;
+document.getElementById('e').value=z;
+alert(z);
+
+    }
+</script>
+</html>

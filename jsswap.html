@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multi</title>
+</head>
+<body>
+    Valu of A: <input type="text" id="a">
+    Value of B: <input type="text" id="b">
+    <br>
+    <button onclick="swap()"><b>swap</b></button>
+    <br>
+    Value of A: <input type="text" id="c">
+    Value of B: <input type="text" id="d">
+</body>
+<script>
+   function swap()
+   {
+    var x,y;
+    x=Number(document.getElementById('a').value);
+    y=Number(document.getElementById('b').value);
+    document.getElementById('c').value=y;
+    document.getElementById('d').value=x;
+
+   } 
+</script>
+</html>

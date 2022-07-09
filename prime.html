@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+<body>
+Enter number<input type="text" name="" id="a">
+<button onclick="pri()">Check</button>
+</body>
+<script>
+   function pri()
+   {
+   var x,i,flag=true;
+    x=Number(document.getElementById("a").value);
+
+    for(i=2; i <= x-1; i++)
+    {
+        if(x % i == 0)
+        {
+            flag = false;
+            break;
+        }
+        if(flag == true)
+        {
+        alert('Prime Number');
+        }
+        else
+        {
+            alert('not Prime');
+        }
+        // if(x==1)
+        // {
+        //     alert('1 isnotprime nor composit');
+        // }
+    }
+   }
+</script>
+</html>
